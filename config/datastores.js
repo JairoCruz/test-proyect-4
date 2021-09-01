@@ -50,7 +50,13 @@ module.exports.datastores = {
     ***************************************************************************/
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
+    //adapter: 'sails-postgresql-redacted',
+   // url: 'postgres://leewhohbdpdtbd:1d28713a7e2e1220bf654c4f4ddae169bb4760a58852f85ce30bd24f6cae72e2@ec2-54-145-224-156.compute-1.amazonaws.com:5432/d6u77lgjr322o5',
+    //ssl: { rejectUnauthorized: false },
 
+    adapter: 'sails-mongo',
+    url: 'mongodb://alb:123456789_@cluster0-shard-00-00.cdmy9.mongodb.net:27017,cluster0-shard-00-01.cdmy9.mongodb.net:27017,cluster0-shard-00-02.cdmy9.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-zmj9wx-shard-0&authSource=admin&retryWrites=true&w=majority',
+    
   },
 
 

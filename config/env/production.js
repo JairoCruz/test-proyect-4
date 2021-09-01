@@ -47,6 +47,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
+      adapter: 'sails-mongo',
+    url: 'mongodb://alb:123456789_@cluster0-shard-00-00.cdmy9.mongodb.net:27017,cluster0-shard-00-01.cdmy9.mongodb.net:27017,cluster0-shard-00-02.cdmy9.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-zmj9wx-shard-0&authSource=admin&retryWrites=true&w=majority',
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
@@ -250,10 +252,11 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
-    // onlyAllowOrigins: [
+    onlyAllowOrigins: [
+      'https://test-proyect-4.herokuapp.com',
     //   'https://example.com',
     //   'https://staging.example.com',
-    // ],
+    ],
 
 
     /***************************************************************************
@@ -325,7 +328,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+  trustProxy: true,
 
   },
 
@@ -374,7 +377,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
+    baseUrl: 'https://test-proyect-4.herokuapp.com',
     internalEmailAddress: 'support@example.com',
 
     // sendgridSecret: 'SG.fake.3e0Bn0qSQVnwb1E4qNPz9JZP5vLZYqjh7sn8S93oSHU',
