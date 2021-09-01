@@ -73,6 +73,7 @@ module.exports = {
       *                                                                           *
       ****************************************************************************/
       // ssl: true,
+      ssl: { rejectUnauthorized: false },
 
     },
 
@@ -206,6 +207,7 @@ module.exports = {
   url: 'mongodb://alb:123456789_@cluster0-shard-00-00.cdmy9.mongodb.net:27017,cluster0-shard-00-01.cdmy9.mongodb.net:27017,cluster0-shard-00-02.cdmy9.mongodb.net:27017/myFirstDatabase?ssl=true&replicaSet=atlas-zmj9wx-shard-0&authSource=admin&retryWrites=true&w=majority',
   
   collection: 'sessions',
+  ssl: { rejectUnauthorized: false },
 
     /***************************************************************************
     *                                                                          *
